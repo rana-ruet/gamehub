@@ -1,28 +1,7 @@
-import { useState } from 'react';
+import React from 'react';
 
 const App = () => {
-  const [game, setGame] = useState({
-    id: 1,
-    player: {
-      name: 'John',
-    },
-  });
-
-  const handleClick = () => {
-    setGame({ ...game, player: { name: 'Rana' } });
-  };
-
-  return (
-    <div>
-      <button
-        onClick={() => {
-          handleClick();
-        }}>
-        Click me
-      </button>
-      <p>{game.player.name}</p>
-    </div>
-  );
+  return <div>App</div>;
 };
 
 export default App;
